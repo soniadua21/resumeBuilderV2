@@ -7,21 +7,21 @@
      <table>
        <tr>
          <td><h5 >Qualification</h5></td>&nbsp;&nbsp;&nbsp;
-         <td><h6 [froalaEditor]='options' [(froalaModel)]="educationDetails[froalaId].Qualification"></h6></td>&nbsp;&nbsp;
+         <td><h6 [froalaEditor]='options' [(froalaModel)]="educationDetails[i].Qualification"></h6></td>&nbsp;&nbsp;
          
        </tr>
       
        <tr>
           <td><h5>School/College Name</h5></td>&nbsp;&nbsp;&nbsp;
-          <td><h6 [froalaEditor]="options" [(froalaModel)]="educationDetails[froalaId].schoolName"></h6></td>
+          <td><h6 [froalaEditor]="options" [(froalaModel)]="educationDetails[i].schoolName"></h6></td>
        </tr>
        <tr>
           <td><h5>Year Of passing</h5></td>&nbsp;&nbsp;&nbsp;
-          <td><h6 [froalaEditor]="options" [(froalaModel)]="educationDetails[froalaId].yearOfPassing">Percentage/CGPA</h6></td>
+          <td><h6 [froalaEditor]="options" [(froalaModel)]="educationDetails[i].yearOfPassing">Percentage/CGPA</h6></td>
        </tr>
        <tr>
           <td><h5>Percentage/CGPA</h5></td>&nbsp;&nbsp;&nbsp;
-          <td><h6  [froalaEditor]="options" [(froalaModel)]="educationDetails[froalaId].Marks">Percentage/CGPA</h6></td>
+          <td><h6  [froalaEditor]="options" [(froalaModel)]="educationDetails[i].Marks">Percentage/CGPA</h6></td>
        </tr>
      </table>
    </div>
