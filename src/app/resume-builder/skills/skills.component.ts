@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ResumeBuilderComponent } from '../resume-builder.component';
 import { FroalaEditorService } from '../../services/froala-editor.service';
 import { SkillsDataService } from '../../services/skills-data.service';
+ 
 
 @Component({
   selector: 'app-skills',

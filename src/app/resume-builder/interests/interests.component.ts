@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ResumeBuilderComponent } from '../resume-builder.component';
 import { FroalaEditorService } from '../../services/froala-editor.service';
 import { InterestsDataService } from '../../services/interests-data.service';
-
+ 
 @Component({
   selector: 'app-interests',
   templateUrl: './interests.component.html',

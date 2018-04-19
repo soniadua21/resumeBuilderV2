@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ResumeBuilderComponent } from '../resume-builder.component';
 import { FroalaEditorService } from '../../services/froala-editor.service';
 import { HobbiesDataService } from '../../services/hobbies-data.service';
-
+ 
 @Component({
   selector: 'app-hobbies',
   templateUrl: './hobbies.component.html',

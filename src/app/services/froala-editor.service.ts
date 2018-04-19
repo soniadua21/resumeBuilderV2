@@ -14,8 +14,11 @@ export class FroalaEditorService {
     toolbarInline: true,
     toolbarVisibleWithoutSelection: true,
     overflow:false,
-    fontSizeDefaultSelection:'10',
-    // toolbarSticky: false
+    fontSizeDefaultSelection:'30',
+    paragraphStyles: {
+      textarea:'textarea'
+    },
+   // toolbarSticky: false
   
   }
  

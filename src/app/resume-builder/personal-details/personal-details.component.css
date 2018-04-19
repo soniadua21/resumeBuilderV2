@@ -1,39 +1,33 @@
-.inputbox {
-
-  background: rgba(204, 204, 195, 0.897);
-  width: 400px;
- overflow: hidden;
-  height: 38 px;
-  
+.personaldetail
+{
+    font-size: 25px;
 }
-
-.inputbox1 {
-
-  background: rgba(204, 204, 195, 0.897);
-  width: auto;
-  height: 38px;
-  overflow: hidden;
+.button
+{
+      
+       align-items: center;
 }
-.inputbox2 {
-
-    background: rgba(204, 204, 195, 0.897);
-    width:auto;
-    height: 38px;
-    padding-right:10px;
-    overflow: hidden;
-  }
-.jumbotron {
- 
-  padding-top:20px;
+.details
+{
+   padding: 15px;
+    border: 3px solid gray;
+    margin: 10px;
+    box-shadow: 10px 10px;
+    border-radius: 25px;
+    object-fit: cover;
 }
-.jumbotron.jumbotron-fluid {
-  
-    width: 200px;
-    height: 100%;
-    padding: 5px;
-  }
-  #infoclass
-  {
-    
-      background-color: white;
-  }
+#textarea
+{
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 398px;  
+    font-size: 20px;
+}

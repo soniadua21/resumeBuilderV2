@@ -1,5 +1,5 @@
 import { Component, OnInit,OnDestroy } from '@angular/core';
-
+ 
 import { Router,ActivatedRoute } from '@angular/router';
 import { ResumeBuilderComponent } from '../resume-builder.component';;
 import { FroalaEditorService } from '../../services/froala-editor.service';
@@ -74,6 +74,9 @@ export class PersonalDetailsComponent implements OnInit,OnDestroy{
     this.personalDetailsData.onSetPersonalDetails(this.personalDetails);
     this.personalDetailsData.onSetNewFields(this.newFields);
     this.personalDetailsData.onSetNewFieldsId(this.id);
+  }
+  onPreview(){
+    this.router.navigate([this.templateId])
   }
 
 }

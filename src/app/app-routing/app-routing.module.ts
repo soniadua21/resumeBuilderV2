@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes,RouterModule} from '@angular/router';
-
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import { IndexPageComponent } from '../index-page/index-page.component';
 import { HomeComponent } from '../home/home.component';
 import { ResumeBuilderComponent } from '../resume-builder/resume-builder.component';
@@ -47,4 +47,7 @@ const appRoute:Routes=[
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule
+ { 
+   
+ }

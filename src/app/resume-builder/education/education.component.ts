@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+ 
 
 import { ResumeBuilderComponent } from '../resume-builder.component';
 import { FroalaEditorService } from '../../services/froala-editor.service';

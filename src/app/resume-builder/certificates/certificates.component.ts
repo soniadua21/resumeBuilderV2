@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ResumeBuilderComponent } from '../resume-builder.component';
 import { FroalaEditorService } from '../../services/froala-editor.service';
 import { CertificatesDataService } from '../../services/certificates-data.service';
-
+ 
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
@@ -19,7 +20,8 @@ export class CertificatesComponent implements OnInit {
   constructor(
     private resumeBuilder:ResumeBuilderComponent,
     private froalaEditor:FroalaEditorService,
-    private certificatesService:CertificatesDataService
+    private certificatesService:CertificatesDataService,
+    
   ) { }
 
   ngOnInit() {
@@ -34,6 +36,14 @@ export class CertificatesComponent implements OnInit {
     this.id++;
     this.froalaId++;
   }
+  loadingPage() {
+    var myVar = setTimeout(this.showPage, 10000);
+}
+showPage() {
+ 
+  document.getElementById("myDiv").style.display ="none";
+  document.getElementById("loader").remove;
+}
 
   onRemoveDetails(){
     if(this.id>=1){
@@ -48,6 +58,7 @@ export class CertificatesComponent implements OnInit {
   onUpdateButton(buttonId){
     this.froalaId=buttonId.id;
   }
+
 
 ngOnDestroy(){
   this.certificatesService.onSetCertificates(this.certificates)
